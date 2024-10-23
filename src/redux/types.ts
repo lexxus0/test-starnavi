@@ -13,7 +13,7 @@ export type Character = {
   id: number;
   name: string;
   image?: string;
-  homeworld: number;
+  homeworld: string;
   homeworldName?: string;
   films: number[];
   starships: number[];

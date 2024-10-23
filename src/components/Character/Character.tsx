@@ -1,7 +1,7 @@
 import styles from "./Character.module.css";
 
 type CharacterProps = {
-  image: string;
+  image: string | undefined;
   name: string;
   birthDate: string;
   homeworld: string;
