@@ -1,0 +1,78 @@
+.navigation {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.navLink {
+  color: #d41313;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navLink:hover,
+.navLink:active {
+  color: rgb(66, 196, 176);
+  background-color: #582c2c;
+}
+
+.activeLink {
+  color: #007bff;
+  background-color: #e9ecef;
+}
+
+.activeLink {
+  background-color: #72cd9e;
+}
+
+.navLink::after {
+  background-color: blue;
+}
+
+.navLink::after {
+  color: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: width 0.3s;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+  width: 100%;
+}
+
+.navLink {
+  font-size: 16px;
+  margin-right: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #e9ecef;
+}
+
+.activeLink {
+  font-weight: bold;
+  color: #007bff;
+}

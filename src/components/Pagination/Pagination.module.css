@@ -1,0 +1,65 @@
+.div {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn:disabled {
+  background-color: #555;
+  color: #fff;
+  cursor: default;
+}
+
+.btn:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn:active {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .btn {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+  .div {
+    gap: 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .div {
+    gap: 14px;
+  }
+}

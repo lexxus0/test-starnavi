@@ -1,0 +1,18 @@
+.p {
+  color: rgb(22, 111, 188);
+}
+
+.input {
+  max-width: 220px;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  background: inherit;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    max-width: 370px;
+  }
+}
